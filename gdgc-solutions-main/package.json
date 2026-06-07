@@ -1,0 +1,13 @@
+{
+  "name": "spoproof-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "frontend": "cd SpoProof && npm run dev",
+    "backend": "cd backend && npm run dev",
+    "dev": "concurrently --names \"FRONTEND,BACKEND\" --prefix-colors \"cyan,yellow\" \"npm run frontend\" \"npm run backend\""
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
